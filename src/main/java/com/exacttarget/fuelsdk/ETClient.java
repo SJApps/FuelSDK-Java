@@ -262,10 +262,6 @@ public class ETClient {
         JsonObject jsonObject = new JsonObject();
         jsonObject.addProperty("clientId", clientId);
         jsonObject.addProperty("clientSecret", clientSecret);
-        jsonObject.addProperty("accessType", "offline");
-        if (refreshToken != null) {
-            jsonObject.addProperty("refreshToken", refreshToken);
-        }
 
         String requestPayload = gson.toJson(jsonObject);
 
